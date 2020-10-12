@@ -10,7 +10,10 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="lblFromBackend" runat="server"></asp:Label>
+            HTTP STATUS : <asp:Label ID="lblStatus" runat="server"></asp:Label>
+            <br /><asp:Label ID="lblFromBackend" runat="server"></asp:Label>
+            <br /><asp:TextBox ID="txtInput" runat="server" Text="INPUT"></asp:TextBox>
+            <br /><asp:Button ID="btnSend" runat="server" Text="SEND REQUEST" OnClick="btnSend_Click" />
         </div>
     </form>
 </body>
